@@ -1,0 +1,57 @@
+{
+  "name": "rehype-pager",
+  "version": "1.0.0",
+  "description": "Make page sections divided by html hr tag. Useful when make slide with obsidian slide format.",
+  "type": "module",
+  "publishConfig": {
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  },
+  "scripts": {
+    "build": "tsc && swc src -d dist --strip-leading-paths",
+    "lint": "pnpm eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hast",
+    "html",
+    "plugin",
+    "rehype",
+    "rehype-plugin",
+    "unified",
+    "sectionize",
+    "slide"
+  ],
+  "author": "Hyomin Koo <me@eatsteak.dev> (https://eatsteak.dev)",
+  "bugs": {
+    "url": "https://github.com/EATSTEAK/rehype-pager/issues",
+    "email": "me@eatsteak.dev"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/",
+    "index.d.ts.map",
+    "index.d.ts",
+    "index.js"
+  ],
+  "repository": "github:EATSTEAK/rehype-pager",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@swc/cli": "^0.5.2",
+    "@swc/core": "^1.10.1",
+    "@types/hast": "^3.0.4",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  },
+  "dependencies": {
+    "unified": "^11.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+}
